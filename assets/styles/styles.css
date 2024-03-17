@@ -1,0 +1,101 @@
+@import url(var.css);
+
+/* ARROWS */
+
+.top-right-arrow::after {
+    content: "\2197 \FE0E";
+}
+
+/* ANIMATIONS */
+
+/* rotate */
+._rotate {
+    display: inline-block;
+    transition-duration: var(--def-duration);
+	transition-property: transform;
+	
+	&:hover {	
+		transform: rotate(5deg);
+        /* text-decoration: underline; */
+	}
+}
+
+/* move */
+._move {
+    transition-duration: var(--def-duration);
+}
+._move:hover {
+    transform: translate(5px, -5px);
+    box-shadow: -10px 10px gray;
+}
+
+/* FONTS */
+
+@font-face {
+    font-family: "Roboto Mono";
+    src: url(../../fonts/RobotoMono-Light.ttf);
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    padding-left: 0;
+}
+
+h1,h2,h3,b1,b2,b3 {
+    font-weight: 200;
+    margin: 0;
+}
+
+h1 {
+    font-size: 5vw;
+    font-style: italic;
+    display: flex;
+    justify-content: center;
+}
+
+h2 {
+    font-size: 3vw;
+}
+
+b1 {
+    font-size: 1vw;
+}
+
+/* BODY */
+
+body {
+    font-family: "Roboto Mono";
+    color: var(--c-txt-1);
+    
+    margin: 0;
+
+    background:
+    linear-gradient(90deg, var(--c-bg-1) calc(var(--dot-space) - var(--dot-size)), transparent 1%) center / var(--dot-space) var(--dot-space),
+    linear-gradient(var(--c-bg-1) calc(var(--dot-space) - var(--dot-size)), transparent 1%) center / var(--dot-space) var(--dot-space),
+    var(--dot-color);
+}
+
+
+
+/* LANG */
+.lang-content {
+    display: flex;
+    justify-content: center;
+}
+
+.lang-pt {
+    display: none;
+}
+
+.lang-en {
+    display: block;
+}
+
+

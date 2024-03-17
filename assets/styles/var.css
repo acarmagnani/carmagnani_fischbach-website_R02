@@ -1,0 +1,29 @@
+:root {
+    /* animations */
+    --def-duration: 0.5s;
+
+        
+    /* bg */
+    --c-bg-1: white;
+
+    /* dots */
+    --dot-color: black;
+    --dot-size: 1.2px;
+    --dot-space: 1vw;
+    
+    /* text */
+    --c-txt-1: black;
+    --c-txt-2: rgb(255, 32, 32);
+
+    /* paddings */
+    --pad: 1vw;
+    --pad-body: 5vw;
+    --marg: 60px;
+
+    /* container */
+    --container-bs-c: black;
+    --container-bs-size: .75vw;
+    --container-border-c: black;
+    --container-border-size: 1px;
+    --container-bg: transparent;
+}

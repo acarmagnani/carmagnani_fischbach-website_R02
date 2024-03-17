@@ -1,0 +1,44 @@
+@import url(var.css);
+
+.proj-grid {
+    border: 1px solid red;
+}
+
+.proj-grid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.proj-item {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: var(--pad-body);
+}
+
+.proj-info {
+    width: 0px;
+}
+
+.proj-img {
+    line-height: 0;
+    box-shadow: calc(var(--container-bs-size)*(-1)) var(--container-bs-size) var(--container-bs-c);
+}
+
+.proj-item-1 {
+    margin-top: 0;
+    left: -20vw;
+    & img {
+        width: 50vw;
+    }
+}
+.proj-item-2 {
+    margin-top: -20%;
+    left: 27vw;
+    & img {
+        width: 30vw;
+    }
+}

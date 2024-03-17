@@ -6,3 +6,11 @@ document.addEventListener("DOMContentLoaded", function() {
             document.getElementById('Header').innerHTML = data;
         });
 });
+
+document.addEventListener("DOMContentLoaded", function() {
+    fetch('html/common/footer.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('Footer').innerHTML = data;
+        });
+});

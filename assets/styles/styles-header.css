@@ -1,21 +1,2 @@
 @import url(var.css);
 
-#Header {
-    display: flex;
-    justify-content: center;
-
-    padding: var(--pad-body);
-}
-
-.header-content ul {
-    display: flex;
-    justify-content: center;
-}
-
-.header-content li {
-    padding: 0 var(--pad);
-}
-
-.header-title {
-    padding-bottom: var(--pad);
-}

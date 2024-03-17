@@ -117,6 +117,27 @@ body {
     box-shadow: calc(var(--container-bs-size)*(-1)) var(--container-bs-size) var(--container-bs-c);
 }
 
+/* HEADER */
+#Header {
+    display: flex;
+    justify-content: center;
+
+    padding: var(--pad-body);
+}
+
+.header-content ul {
+    display: flex;
+    justify-content: center;
+}
+
+.header-content li {
+    padding: 0 var(--pad);
+}
+
+.header-title {
+    padding-bottom: var(--pad);
+}
+
 /* FOOTER */
 
 #Footer {

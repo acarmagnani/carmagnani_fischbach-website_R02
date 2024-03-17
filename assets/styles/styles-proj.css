@@ -7,10 +7,14 @@
     flex-direction: column;
 }
 
+/* -- */
+
 .proj-item {
     position: relative;
-    padding-bottom: var(--pad-body);
+    margin: var(--pad-body) 0;
 }
+
+/* -- */
 
 .proj-info {
     color: var(--c-txt-2);
@@ -22,6 +26,8 @@
     box-shadow: calc(var(--container-bs-size)*(-1)) var(--container-bs-size) var(--container-bs-c);
 }
 
+/* -- */
+
 .proj-item-1 {
     left: -20vw;
     & img {
@@ -29,7 +35,7 @@
     }
 }
 .proj-item-2 {
-    left: 20vw;
+    left: 25vw;
     & img {
         width: 20vw;
     }

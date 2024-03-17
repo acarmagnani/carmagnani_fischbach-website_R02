@@ -1,0 +1,52 @@
+@import url(var.css);
+
+.about-grid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* -- */
+
+.about-item {
+    position: relative;
+    margin: var(--pad-body) 0;
+}
+
+/* -- */
+
+.about-grid-1 {
+    background-color: var(--c-bg-1);
+}
+
+/* -- */
+
+.about-item-1 {
+    width: 50vw;
+    left: -20vw;
+}
+
+.about-item-2 {
+    width: 30vw;
+    left: 30vw;
+}
+
+.about-item-3 {
+    width: 40vw;
+    left: -10vw;
+}
+
+
+@media (min-width: 1000px) {
+    .about-item-1 {
+        width: 500px;
+    }
+    .about-item-2 {
+        width: 300px;
+    }
+    .about-item-3 {
+        width: 400px;
+    }
+    
+}

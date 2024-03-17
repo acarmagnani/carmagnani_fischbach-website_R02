@@ -21,7 +21,7 @@
     --marg: 60px;
 
     /* container */
-    --container-bs-c: rgb(133, 133, 133);
+    --container-bs-c: rgb(0, 0, 0);
     --container-bs-size: 5px;
     --container-border-c: black;
     --container-border-size: 1px;

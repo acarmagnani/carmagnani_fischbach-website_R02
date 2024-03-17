@@ -1,10 +1,6 @@
 @import url(var.css);
 
 .proj-grid {
-    border: 1px solid red;
-}
-
-.proj-grid {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -23,6 +19,7 @@
 
 .proj-img {
     line-height: 0;
+    border: var(--container-border-size) solid var(--container-border-c);
     box-shadow: calc(var(--container-bs-size)*(-1)) var(--container-bs-size) var(--container-bs-c);
 }
 
@@ -37,6 +34,6 @@
     margin-top: -20%;
     left: 27vw;
     & img {
-        width: 30vw;
+        width: 20vw;
     }
 }

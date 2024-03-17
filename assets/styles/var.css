@@ -8,7 +8,7 @@
 
     /* dots */
     --dot-color: black;
-    --dot-size: 0.2vw;
+    --dot-size: 0.15vw;
     --dot-space: 1.5vw;
     
     /* text */
@@ -16,7 +16,7 @@
     --c-txt-2: rgb(255, 32, 32);
 
     /* paddings */
-    --pad: 1vw;
+    --pad: 10px;
     --pad-body: 5vw;
     --marg: 60px;
 

@@ -13,12 +13,12 @@
 
 .proj-item {
     position: relative;
-
     padding-bottom: var(--pad-body);
 }
 
 .proj-info {
     color: var(--c-txt-2);
+    margin-bottom: var(--pad);
 }
 
 .proj-img {

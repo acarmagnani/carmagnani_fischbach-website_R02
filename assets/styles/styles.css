@@ -82,10 +82,22 @@ body {
     var(--dot-color);
 }
 
-/* LANG */
-.lang-content {
+.grid {
     display: flex;
     justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.grid-item {
+    position: relative;
+    margin: var(--pad-body) 0;
+}
+
+/* LANG */
+
+.lang-item {
+    left: 20vw;
 }
 
 .lang-pt {

@@ -14,3 +14,11 @@ document.addEventListener("DOMContentLoaded", function() {
             document.getElementById('Footer').innerHTML = data;
         });
 });
+
+document.addEventListener("DOMContentLoaded", function() {
+    fetch('html/common/lang.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('Lang').innerHTML = data;
+        });
+});

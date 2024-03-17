@@ -1,21 +1,5 @@
 @import url(var.css);
 
-.proj-grid {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-
-/* -- */
-
-.proj-item {
-    position: relative;
-    margin: var(--pad-body) 0;
-}
-
-/* -- */
-
 .proj-info {
     color: var(--c-txt-2);
     margin-bottom: var(--pad);

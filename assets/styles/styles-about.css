@@ -9,31 +9,27 @@
 
 /* -- */
 
-.about-item {
-    position: relative;
-    margin: var(--pad-body) 0;
-}
-
-/* -- */
-
 .about-grid-1 {
-    background-color: var(--c-bg-1);
+    background-color: rgb(255, 249, 241);
+    & h1,h2,h3,b1,b2,b3 {
+        background-color: transparent;
+    }
 }
 
 /* -- */
 
 .about-item-1 {
-    width: 50vw;
-    left: -20vw;
+    width: 70vw;
+    left: -10vw;
 }
 
 .about-item-2 {
-    width: 30vw;
-    left: 30vw;
+    width: 50vw;
+    left: 20vw;
 }
 
 .about-item-3 {
-    width: 40vw;
+    width: 50vw;
     left: -10vw;
 }
 
@@ -41,6 +37,7 @@
 @media (min-width: 1000px) {
     .about-item-1 {
         width: 500px;
+        left: -20vw;
     }
     .about-item-2 {
         width: 300px;

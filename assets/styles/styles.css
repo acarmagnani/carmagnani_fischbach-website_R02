@@ -99,4 +99,11 @@ body {
     display: block;
 }
 
+/* CONTAINER */
 
+.container {
+    background-color: var(--container-bg);
+    padding: var(--pad);
+    border: var(--container-border-size) solid var(--container-border-c);
+    box-shadow: calc(var(--container-bs-size)*(-1)) var(--container-bs-size) var(--container-bs-c);
+}

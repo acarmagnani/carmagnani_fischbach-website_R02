@@ -21,9 +21,9 @@
     --marg: 60px;
 
     /* container */
-    --container-bs-c: black;
-    --container-bs-size: .75vw;
+    --container-bs-c: rgb(133, 133, 133);
+    --container-bs-size: 5px;
     --container-border-c: black;
     --container-border-size: 1px;
-    --container-bg: transparent;
+    --container-bg: white;
 }

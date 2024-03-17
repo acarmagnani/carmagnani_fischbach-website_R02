@@ -21,6 +21,7 @@
 
 .proj-info {
     width: 0px;
+    color: var(--c-txt-2);
 }
 
 .proj-img {

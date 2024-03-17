@@ -54,18 +54,18 @@ h1,h2,h3,b1,b2,b3 {
 }
 
 h1 {
-    font-size: 5vw;
+    font-size: 20px;
     font-style: italic;
     display: flex;
     justify-content: center;
 }
 
 h2 {
-    font-size: 3vw;
+    font-size: 14px;
 }
 
 b1 {
-    font-size: 1vw;
+    font-size: 10px;
 }
 
 /* BODY */

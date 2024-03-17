@@ -13,14 +13,11 @@
 
 .proj-item {
     position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+
     padding-bottom: var(--pad-body);
 }
 
 .proj-info {
-    width: 0px;
     color: var(--c-txt-2);
 }
 

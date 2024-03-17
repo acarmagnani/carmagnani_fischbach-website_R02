@@ -94,28 +94,18 @@ body {
     margin: var(--pad-body) 0;
 }
 
-/* LANG */
-
-.lang-item {
-    left: 20vw;
-}
-
-.lang-pt {
-    display: none;
-}
-
-.lang-en {
-    display: block;
-}
-
-/* CONTAINER */
-
 .container {
     background-color: var(--container-bg);
     padding: var(--pad);
     border: var(--container-border-size) solid var(--container-border-c);
     box-shadow: calc(var(--container-bs-size)*(-1)) var(--container-bs-size) var(--container-bs-c);
 }
+
+
+
+/* COMMON */
+
+
 
 /* HEADER */
 #Header {
@@ -138,6 +128,20 @@ body {
     padding-bottom: var(--pad);
 }
 
+/* LANG */
+
+.lang-item {
+    left: 20vw;
+}
+
+.lang-pt {
+    display: none;
+}
+
+.lang-en {
+    display: block;
+}
+
 /* FOOTER */
 
 #Footer {
@@ -158,6 +162,11 @@ body {
 .footer-info, .footer-title {
     padding: 30px 0;
 }
+
+
+/* MEDIA QUERY */
+
+
 
 @media (min-width: 1000px) {
     h1 {

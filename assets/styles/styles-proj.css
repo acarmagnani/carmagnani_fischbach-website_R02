@@ -17,23 +17,33 @@
     margin-bottom: var(--pad);
 }
 
-.proj-img {
+.proj-img img {
     line-height: 0;
-    border: var(--container-border-size) solid var(--container-border-c);
     box-shadow: calc(var(--container-bs-size)*(-1)) var(--container-bs-size) var(--container-bs-c);
 }
 
 .proj-item-1 {
-    margin-top: 0;
     left: -20vw;
     & img {
         width: 50vw;
     }
 }
 .proj-item-2 {
-    margin-top: -20%;
-    left: 27vw;
+    left: 20vw;
     & img {
         width: 20vw;
+    }
+}
+
+@media (min-width: 1000px) {
+    .proj-item-1 {
+        & img {
+            width: 500px;
+        }
+    }
+    .proj-item-2 {
+        & img {
+            width: 200px;
+        }
     }
 }

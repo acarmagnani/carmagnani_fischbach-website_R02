@@ -57,14 +57,31 @@ h1,h2,h3,b1,b2,b3 {
 h1 {
     font-size: 17px;
     font-style: italic;
+    background-color: var(--c-bg-1);
 }
 
 h2 {
     font-size: 12px;
+    background-color: var(--c-bg-1);
 }
 
 b1 {
     font-size: 8px;
+    background-color: var(--c-bg-1);
+}
+
+@media (min-width: 1000px) {
+    h1 {
+        font-size: 24px;
+    }
+    
+    h2 {
+        font-size: 14px;
+    }
+    
+    b1 {
+        font-size: 10.5px;
+    }
 }
 
 /* BODY */

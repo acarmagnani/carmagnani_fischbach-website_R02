@@ -27,3 +27,14 @@
     --container-border-size: 1px;
     --container-bg: white;
 }
+
+@media (min-width: 1000px) {
+    :root {
+        /* dots */
+        --dot-size: 1.2px;
+        --dot-space: 15px;
+
+        /* paddings */
+        --pad-body: 50px;
+    }
+}

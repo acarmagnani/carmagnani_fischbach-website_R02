@@ -1,0 +1,30 @@
+@import url(var.css);
+
+.contact-grid-2 {
+    background-color: rgb(246, 255, 236);
+    & h1,h2,h3,b1,b2,b3 {
+        background-color: transparent;
+    }
+}
+
+.contact-item-1 {
+    left: -18vw;
+}
+
+.contact-item-2 {
+    left: 10vw;
+}
+
+.contact-item-3 {
+    left: -15vw;
+}
+
+.contact-item-4 {
+    width: clamp(100px, 50%, 300px);
+    left: 15vw;
+}
+
+.contact-item-5 {
+    width: clamp(150px, 70%, 700px);
+    left: -15vw;
+}

@@ -1,14 +1,5 @@
 @import url(var.css);
 
-.about-grid {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-
-/* -- */
-
 .about-grid-1 {
     background-color: rgb(255, 249, 241);
     & h1,h2,h3,b1,b2,b3 {
@@ -19,31 +10,16 @@
 /* -- */
 
 .about-item-1 {
-    width: 70vw;
+    width: clamp(150px, 50%, 500px);
     left: -10vw;
 }
 
 .about-item-2 {
-    width: 50vw;
+    width: clamp(150px, 60%, 600px);
     left: 20vw;
 }
 
 .about-item-3 {
-    width: 50vw;
+    width: clamp(150px, 50%, 300px);
     left: -10vw;
-}
-
-
-@media (min-width: 1000px) {
-    .about-item-1 {
-        width: 500px;
-        left: -20vw;
-    }
-    .about-item-2 {
-        width: 300px;
-    }
-    .about-item-3 {
-        width: 400px;
-    }
-    
 }

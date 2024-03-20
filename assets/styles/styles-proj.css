@@ -1,8 +1,13 @@
 @import url(var.css);
 
+.proj-item img {
+    width: 100%;
+}
+
 .proj-info {
     color: var(--c-txt-2);
     margin-bottom: var(--pad);
+    white-space: nowrap;
 }
 
 .proj-img img {
@@ -14,26 +19,9 @@
 
 .proj-item-1 {
     left: -20vw;
-    & img {
-        width: 50vw;
-    }
+    width: clamp(150px, 50vw, 500px);
 }
 .proj-item-2 {
     left: 25vw;
-    & img {
-        width: 20vw;
-    }
-}
-
-@media (min-width: 1000px) {
-    .proj-item-1 {
-        & img {
-            width: 500px;
-        }
-    }
-    .proj-item-2 {
-        & img {
-            width: 200px;
-        }
-    }
+    width: clamp(60px, 20vw, 200px);
 }

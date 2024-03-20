@@ -10,16 +10,16 @@
 /* -- */
 
 .about-item-1 {
-    width: clamp(150px, 50%, 500px);
+    width: clamp(150px, 50vw, 500px);
     left: -10vw;
 }
 
 .about-item-2 {
-    width: clamp(150px, 60%, 600px);
+    width: clamp(150px, 60vw, 600px);
     left: 20vw;
 }
 
 .about-item-3 {
-    width: clamp(150px, 50%, 300px);
+    width: clamp(150px, 50vw, 300px);
     left: -10vw;
 }

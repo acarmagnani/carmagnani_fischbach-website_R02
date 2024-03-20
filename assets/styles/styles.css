@@ -25,8 +25,8 @@
     transition-duration: var(--def-duration);
 }
 ._move:hover {
-    transform: translate(5px, -5px);
-    box-shadow: calc(var(--container-bs-size)*(-2)) calc(var(--container-bs-size)*(2)) grey;
+    transform: translate( var(--move), calc(var(--move)*(-1)) );
+    box-shadow: calc(var(--move-bs)*(-1)) var(--move-bs) rgb(121, 121, 121);
 }
 
 /* FONTS */
@@ -164,7 +164,7 @@ body {
 }
 
 
-/* MEDIA QUERY */
+/* MEDIA QUERIE */
 
 
 

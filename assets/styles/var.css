@@ -1,15 +1,17 @@
 :root {
+
     /* animations */
     --def-duration: 0.5s;
+    --move: 5px;
+    --move-bs: calc(var(--move) + var(--container-bs-size));
 
-        
     /* bg */
     --c-bg-1: white;
 
     /* dots */
     --dot-color: black;
-    --dot-size: 0.15vw;
-    --dot-space: 1.5vw;
+    --dot-size: clamp(0.45px, 0.15vw, 1.2px);
+    --dot-space: clamp(4.5px, 1.5vw, 15px);
     
     /* text */
     --c-txt-1: black;
@@ -17,24 +19,13 @@
 
     /* paddings */
     --pad: 10px;
-    --pad-body: 5vw;
+    --pad-body: clamp(16px, 5vw, 50px);
     --marg: 60px;
 
     /* container */
     --container-bs-c: rgb(0, 0, 0);
-    --container-bs-size: 5px;
+    --container-bs-size: 3px;
     --container-border-c: black;
     --container-border-size: 1px;
     --container-bg: white;
-}
-
-@media (min-width: 1000px) {
-    :root {
-        /* dots */
-        --dot-size: 1.2px;
-        --dot-space: 15px;
-
-        /* paddings */
-        --pad-body: 50px;
-    }
 }

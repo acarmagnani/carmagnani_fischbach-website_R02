@@ -20,11 +20,11 @@
 }
 
 .contact-item-4 {
-    width: clamp(100px, 50%, 300px);
+    width: clamp(100px, 50vw, 300px);
     left: 15vw;
 }
 
 .contact-item-5 {
-    width: clamp(150px, 70%, 700px);
+    width: clamp(150px, 70vw, 700px);
     left: -15vw;
 }

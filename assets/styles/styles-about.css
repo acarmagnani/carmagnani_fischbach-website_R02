@@ -2,6 +2,7 @@
 
 .about-grid-1 {
     background-color: rgb(255, 249, 241);
+
     & h1,h2,h3,b1,b2,b3 {
         background-color: transparent;
     }
@@ -16,10 +17,10 @@
 
 .about-item-2 {
     width: clamp(150px, 60vw, 600px);
-    left: 20vw;
+    left: 15vw;
 }
 
 .about-item-3 {
-    width: clamp(150px, 50vw, 300px);
+    width: clamp(150px, 60vw, 300px);
     left: -10vw;
 }

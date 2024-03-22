@@ -56,16 +56,18 @@ h1,h2,h3,b1,b2,b3 {
 }
 
 h1 {
-    font-size: 20px;
+    font-size: clamp(18px, 4vw, 28px);
     font-style: italic;
+    letter-spacing: clamp(1px, .5vw, 5px);
 }
 
 h2 {
-    font-size: 12px;
+    font-size: clamp(12px, 3vw, 15px);
 }
 
 b1 {
-    font-size: 9px;
+    font-size: clamp(9px, 2vw, 12px);
+
 }
 
 /* BODY */
@@ -108,30 +110,38 @@ body {
 
 
 /* HEADER */
-#Header {
-    display: flex;
-    justify-content: center;
 
-    padding: var(--pad-body);
+.header-item {
+
+    & ul, h1 {
+        display: flex;
+        justify-content: center;
+    }
+
+    & li {
+        padding: 0 var(--pad);
+    }
 }
 
-.header-content ul {
-    display: flex;
-    justify-content: center;
-}
 
-.header-content li {
-    padding: 0 var(--pad);
-}
 
 .header-title {
     padding-bottom: var(--pad);
 }
 
-/* LANG */
 
+/* LANG */
 .lang-item {
+    cursor: pointer;
+    margin: calc(var(--pad-body)/2) 0;
+}
+
+.lang-item-1 {
     left: 20vw;
+}
+
+.lang-item-2 {
+    left: 10vw;
 }
 
 .lang-pt {
@@ -142,8 +152,11 @@ body {
     display: block;
 }
 
-/* FOOTER */
+.underline {
+    text-decoration: underline;
+}
 
+/* FOOTER */
 #Footer {
     position: absolute;
     width: 100%;
@@ -168,18 +181,7 @@ body {
 
 
 
-@media (min-width: 1000px) {
-    h1 {
-        font-size: 28px;
-    }
-    
-    h2 {
-        font-size: 15px;
-    }
-    
-    b1 {
-        font-size: 12px;
-    }
+@media (min-width: 1000px) {  
 
     #Footer {
         display: flex;

@@ -1,17 +1,17 @@
 document.addEventListener("DOMContentLoaded", function() {
 
     // COMMON
-    fetchAndInsert('../root/common/header.html', 'Header', removeLangPT);
-    fetchAndInsert('../root/common/footer.html', 'Footer', removeLangPT);
-    fetchAndInsert('../root/common/lang-en.html', 'Lang', function() {
+    fetchAndInsert('html/common/header.html', 'Header', removeLangPT);
+    fetchAndInsert('html/common/footer.html', 'Footer', removeLangPT);
+    fetchAndInsert('html/common/lang-en.html', 'Lang', function() {
         // Call the function to modify the links
         modifyLangLinks();
     });
 
-    // ROOT
-    fetchAndInsert('../root/index.html', 'Index', removeLangPT);
-    fetchAndInsert('../root/about.html', 'About', removeLangPT);
-    fetchAndInsert('../root/contact.html', 'Contact', removeLangPT);
+    // PAGES
+    fetchAndInsert('html/pages/index.html', 'Index', removeLangPT);
+    fetchAndInsert('html/pages/about.html', 'About', removeLangPT);
+    fetchAndInsert('html/pages/contact.html', 'Contact', removeLangPT);
 });
 
 function fetchAndInsert(url, targetId, callback) {
@@ -50,6 +50,6 @@ function modifyLangLinks() {
     var linkEn = document.getElementById("Lang-en");
     
     // Set the href attributes dynamically
-    linkPt.href = "../pt/" + fileName;
-    linkEn.href = "../en/" + fileName;
+    linkPt.href = "pt/" + fileName;
+    linkEn.href = fileName;
 }

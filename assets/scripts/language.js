@@ -1,20 +1,16 @@
+// Set English as the default language if no preference is stored
 document.addEventListener('DOMContentLoaded', function () {
-    // Check if language preference is already stored
-    var savedLanguage = localStorage.getItem('language');
-    if (savedLanguage) {
-        toggleLanguage(savedLanguage); // Apply stored language preference
-    } else {
-        // If no language preference is stored, default to English
-        toggleLanguage('en');
+    var selectedLanguage = localStorage.getItem('language');
+    if (!selectedLanguage) {
+        selectedLanguage = 'en';
+        localStorage.setItem('language', selectedLanguage);
     }
+    toggleLanguage(selectedLanguage);
 });
 
 function toggleLanguage(language) {
     var langPtElements = document.querySelectorAll('.lang-pt');
     var langEnElements = document.querySelectorAll('.lang-en');
-
-    var langPtButton = document.getElementById('Lang-pt');
-    var langEnButton = document.getElementById('Lang-en');
 
     if (language === 'pt') {
         // Set visibility for Portuguese elements
@@ -26,11 +22,6 @@ function toggleLanguage(language) {
         langEnElements.forEach(function (element) {
             element.style.display = 'none';
         });
-
-        // Add underline to Portuguese button
-        langPtButton.classList.add('underline');
-        // Remove underline from English button
-        langEnButton.classList.remove('underline');
     } else if (language === 'en') {
         // Set visibility for English elements
         langEnElements.forEach(function (element) {
@@ -41,13 +32,11 @@ function toggleLanguage(language) {
         langPtElements.forEach(function (element) {
             element.style.display = 'none';
         });
-
-        // Add underline to English button
-        langEnButton.classList.add('underline');
-        // Remove underline from Portuguese button
-        langPtButton.classList.remove('underline');
     }
+}
 
-    // Store language preference in localStorage
+// Function to update language preference and toggle language
+function updateLanguagePreference(language) {
     localStorage.setItem('language', language);
+    toggleLanguage(language);
 }

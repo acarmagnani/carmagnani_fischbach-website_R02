@@ -144,14 +144,6 @@ body {
     left: 10vw;
 }
 
-.lang-pt {
-    display: none;
-}
-
-.lang-en {
-    display: block;
-}
-
 .underline {
     text-decoration: underline;
 }

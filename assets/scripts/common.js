@@ -1,24 +1,25 @@
-// COMMON
 document.addEventListener("DOMContentLoaded", function() {
-    fetch('html/common/header.html')
-        .then(response => response.text())
-        .then(data => {
-            document.getElementById('Header').innerHTML = data;
-        });
+    // Fetch and insert header
+    fetchAndInsert('html/common/header.html', 'Header');
+
+    // Fetch and insert footer
+    fetchAndInsert('html/common/footer.html', 'Footer');
+
+    // Fetch and insert language selector
+    fetchAndInsert('html/common/lang.html', 'Lang');
 });
 
-document.addEventListener("DOMContentLoaded", function() {
-    fetch('html/common/footer.html')
+function fetchAndInsert(url, targetId) {
+    fetch(url)
         .then(response => response.text())
         .then(data => {
-            document.getElementById('Footer').innerHTML = data;
+            const targetElement = document.getElementById(targetId);
+            const div = document.createElement('div');
+            div.innerHTML = data;
+            // Append the first child of the new div (the root element of the fetched HTML) to the target element
+            targetElement.appendChild(div.firstChild);
+            // Call toggleLanguage after inserting the content
+            toggleLanguage(localStorage.getItem('language'));
+            // You can execute additional logic or handle scripts here if necessary
         });
-});
-
-document.addEventListener("DOMContentLoaded", function() {
-    fetch('html/common/lang.html')
-        .then(response => response.text())
-        .then(data => {
-            document.getElementById('Lang').innerHTML = data;
-        });
-});
+}

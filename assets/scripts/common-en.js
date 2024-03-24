@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 
     // ROOT
-    fetchAndInsert('../root/works.html', 'Works', removeLangPT);
+    fetchAndInsert('../root/index.html', 'Index', removeLangPT);
     fetchAndInsert('../root/about.html', 'About', removeLangPT);
     fetchAndInsert('../root/contact.html', 'Contact', removeLangPT);
 });

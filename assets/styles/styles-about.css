@@ -1,5 +1,15 @@
 @import url(var.css);
 
+/* LANG */
+.lang-item-1 {
+    left: 10vw;
+}
+
+.lang-item-2 {
+    right: 10vw;
+}
+
+/* ABOUT */
 .about-grid-1 {
     background-color: rgb(255, 249, 241);
 

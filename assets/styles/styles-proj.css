@@ -1,5 +1,15 @@
 @import url(var.css);
 
+/* LANG */
+.lang-item-1 {
+    right: 10vw;
+}
+
+.lang-item-2 {
+    right: 5vw;
+}
+
+/* PROJ */
 .proj-item img {
     width: 100%;
 }

@@ -123,8 +123,6 @@ body {
     }
 }
 
-
-
 .header-title {
     padding-bottom: var(--pad);
 }
@@ -136,17 +134,11 @@ body {
     margin: calc(var(--pad-body)/2) 0;
 }
 
-.lang-item-1 {
-    left: 20vw;
-}
-
-.lang-item-2 {
-    left: 10vw;
-}
-
+/* BODY */
 .underline {
     text-decoration: underline;
 }
+
 
 /* FOOTER */
 #Footer {

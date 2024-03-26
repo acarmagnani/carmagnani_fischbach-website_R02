@@ -1,5 +1,15 @@
 @import url(var.css);
 
+/* LANG */
+.lang-item-1 {
+    left: 20vw;
+}
+
+.lang-item-2 {
+    left: 10vw;
+}
+
+/* CONTACT */
 .contact-grid-2 {
     background-color: rgb(246, 255, 236);
     & h1,h2,h3,b1,b2,b3 {

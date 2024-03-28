@@ -10,6 +10,10 @@
 }
 
 /* CONTACT */
+.contact-title {
+    padding-bottom: var(--pad);
+}
+
 .contact-grid-2 {
     background-color: rgb(246, 255, 236);
     & h1,h2,h3,b1,b2,b3 {

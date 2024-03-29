@@ -21,7 +21,7 @@
 /* -- */
 
 .about-item-1 {
-    width: clamp(150px, 50vw, 500px);
+    width: clamp(150px, 50vw, 450px);
     left: -10vw;
 }
 

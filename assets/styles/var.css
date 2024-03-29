@@ -7,15 +7,17 @@
 
     /* bg */
     --c-bg-1: white;
+    --c-bg-2: rgb(0, 0, 0);
 
     /* dots */
-    --dot-color: black;
+    --dot-c-1: black;
+    --dot-c-2: white;
     --dot-size: clamp(0.45px, 0.15vw, 1.2px);
     --dot-space: clamp(4.5px, 1.5vw, 15px);
     
     /* text */
-    --c-txt-1: black;
-    --c-txt-2: rgb(255, 32, 32);
+    --txt-c-1: black;
+    --txt-c-2: green;
 
     /* paddings */
     --pad: 10px;

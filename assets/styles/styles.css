@@ -50,9 +50,10 @@ ul {
 }
 
 h1,h2,h3,b1,b2,b3 {
-    font-weight: 200;
+    font-weight: 100;
     margin: 0;
     background-color: var(--c-bg-1);
+    display: inline;
 }
 
 h1 {
@@ -74,14 +75,14 @@ b1 {
 
 body {
     font-family: "Roboto Mono";
-    color: var(--c-txt-1);
+    color: var(--txt-c-1);
     
     margin: 0;
 
     background:
     linear-gradient(90deg, var(--c-bg-1) calc(var(--dot-space) - var(--dot-size)), transparent 1%) center / var(--dot-space) var(--dot-space),
     linear-gradient(var(--c-bg-1) calc(var(--dot-space) - var(--dot-size)), transparent 1%) center / var(--dot-space) var(--dot-space),
-    var(--dot-color);
+    var(--dot-c-1);
 }
 
 .grid {
@@ -96,11 +97,17 @@ body {
     margin: var(--pad-body) 0;
 }
 
-.container {
+.container-1 {
     background-color: var(--container-bg);
     padding: var(--pad);
     border: var(--container-border-size) solid var(--container-border-c);
     box-shadow: calc(var(--container-bs-size)*(-1)) var(--container-bs-size) var(--container-bs-c);
+}
+
+.container-2 {
+    background-color: var(--container-bg);
+    padding: var(--pad);
+    border: var(--container-border-size) dashed var(--container-border-c);
 }
 
 
@@ -141,12 +148,25 @@ body {
 
 
 /* FOOTER */
+
+footer {
+    color: rgb(255, 255, 255);
+    
+    margin: 0;
+
+    background:
+    linear-gradient(90deg, var(--c-bg-2) calc(var(--dot-space) - var(--dot-size)), transparent 1%) center / var(--dot-space) var(--dot-space),
+    linear-gradient(var(--c-bg-2) calc(var(--dot-space) - var(--dot-size)), transparent 1%) center / var(--dot-space) var(--dot-space),
+    var(--dot-c-2);
+}
+
 #Footer {
     position: absolute;
     width: 100%;
 
-    background-color: white;
-    mix-blend-mode: difference;
+    & h1,h2,h3,b1 {
+        background-color: var(--c-bg-2);
+    }
 }
 
 .footer-container {

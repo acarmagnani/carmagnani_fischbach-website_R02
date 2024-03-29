@@ -15,7 +15,7 @@
 }
 
 .index-info {
-    color: var(--c-txt-2);
+    color: var(--txt-c-2);
     margin-bottom: var(--pad);
     white-space: nowrap;
 }

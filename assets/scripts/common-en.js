@@ -1,17 +1,18 @@
 document.addEventListener("DOMContentLoaded", function() {
 
     // COMMON
-    fetchAndInsert('html/common/header.html', 'Header', removeLangPT);
-    fetchAndInsert('html/common/footer.html', 'Footer', removeLangPT);
-    fetchAndInsert('html/common/lang-en.html', 'Lang', function() {
+    fetchAndInsert('../html/common/header.html', 'Header', removeLangPT);
+    fetchAndInsert('../html/common/footer.html', 'Footer', removeLangPT);
+    fetchAndInsert('../html/common/lang-en.html', 'Lang', function() {
         // Call the function to modify the links
         modifyLangLinks();
     });
 
     // PAGES
-    fetchAndInsert('html/pages/index.html', 'Index', removeLangPT);
-    fetchAndInsert('html/pages/about.html', 'About', removeLangPT);
-    fetchAndInsert('html/pages/contact.html', 'Contact', removeLangPT);
+    fetchAndInsert('../html/pages/index.html', 'Index', removeLangPT);
+    fetchAndInsert('../html/pages/about.html', 'About', removeLangPT);
+    fetchAndInsert('../html/pages/contact.html', 'Contact', removeLangPT);
+    fetchAndInsert('../html/pages/lavandisca_bedroom.html', 'Lavandisca_bedroom', removeLangPT);
 });
 
 function fetchAndInsert(url, targetId, callback) {

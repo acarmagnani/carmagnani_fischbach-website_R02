@@ -12,6 +12,7 @@ document.addEventListener("DOMContentLoaded", function() {
     fetchAndInsert('../html/pages/index.html', 'Index', removeLangEN);
     fetchAndInsert('../html/pages/about.html', 'About', removeLangEN);
     fetchAndInsert('../html/pages/contact.html', 'Contact', removeLangEN);
+    fetchAndInsert('../html/pages/lavandisca_bedroom.html', 'Lavandisca_bedroom', removeLangEN);
 });
 
 function fetchAndInsert(url, targetId, callback) {

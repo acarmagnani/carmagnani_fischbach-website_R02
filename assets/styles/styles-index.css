@@ -9,29 +9,29 @@
     right: 5vw;
 }
 
-/* PROJ */
-.proj-item img {
+/* INDEX */
+.index-item img {
     width: 100%;
 }
 
-.proj-info {
+.index-info {
     color: var(--c-txt-2);
     margin-bottom: var(--pad);
     white-space: nowrap;
 }
 
-.proj-img img {
+.index-img img {
     line-height: 0;
     box-shadow: calc(var(--container-bs-size)*(-1)) var(--container-bs-size) var(--container-bs-c);
 }
 
 /* -- */
 
-.proj-item-1 {
+.index-item-1 {
     left: -20vw;
     width: clamp(150px, 50vw, 500px);
 }
-.proj-item-2 {
+.index-item-2 {
     left: 25vw;
     width: clamp(60px, 20vw, 200px);
 }

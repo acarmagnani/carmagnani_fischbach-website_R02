@@ -15,31 +15,31 @@
 }
 
 .contact-grid-2 {
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(253, 249, 245);
+    color: var(--txt-c-2);
     & h1,h2,h3,b1,b2,b3 {
         background-color: transparent;
     }
 }
 
-.contact-item-1 {
+.contact-item-1_1 {
     left: -18vw;
 }
 
-.contact-item-2 {
+.contact-item-1_2 {
     left: 10vw;
 }
 
-.contact-item-3 {
+.contact-item-1_3 {
     left: -15vw;
 }
 
-.contact-item-4 {
+.contact-item-2_1 {
     width: clamp(150px, 70vw, 700px);
     left: 15vw;
-    color: var(--txt-c-2);
 }
 
-.contact-item-5 {
+.contact-item-3_1 {
     width: clamp(100px, 50vw, 300px);
     left: -10vw;
 }

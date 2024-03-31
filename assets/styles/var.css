@@ -6,8 +6,8 @@
     --move-bs: calc(var(--move) + var(--container-bs-size));
 
     /* bg */
-    --c-bg-1: white;
-    --c-bg-2: rgb(0, 0, 0);
+    --bg-c-1: white;
+    --bg-c-2: rgb(0, 0, 0);
 
     /* dots */
     --dot-c-1: black;

@@ -52,7 +52,7 @@ ul {
 h1,h2,h3,b1,b2,b3 {
     font-weight: 100;
     margin: 0;
-    background-color: var(--c-bg-1);
+    background-color: var(--bg-c-1);
     display: inline;
 }
 
@@ -63,11 +63,11 @@ h1 {
 }
 
 h2 {
-    font-size: clamp(12px, 3vw, 15px);
+    font-size: clamp(12px, 3vw, 16px);
 }
 
 b1 {
-    font-size: clamp(10px, 2vw, 13px);
+    font-size: clamp(10px, 2vw, 14px);
 
 }
 
@@ -80,9 +80,13 @@ body {
     margin: 0;
 
     background:
-    linear-gradient(90deg, var(--c-bg-1) calc(var(--dot-space) - var(--dot-size)), transparent 1%) center / var(--dot-space) var(--dot-space),
-    linear-gradient(var(--c-bg-1) calc(var(--dot-space) - var(--dot-size)), transparent 1%) center / var(--dot-space) var(--dot-space),
+    linear-gradient(90deg, var(--bg-c-1) calc(var(--dot-space) - var(--dot-size)), transparent 1%) center / var(--dot-space) var(--dot-space),
+    linear-gradient(var(--bg-c-1) calc(var(--dot-space) - var(--dot-size)), transparent 1%) center / var(--dot-space) var(--dot-space),
     var(--dot-c-1);
+}
+
+.pad {
+    padding-bottom: var(--pad);
 }
 
 .grid {
@@ -155,8 +159,8 @@ footer {
     margin: 0;
 
     background:
-    linear-gradient(90deg, var(--c-bg-2) calc(var(--dot-space) - var(--dot-size)), transparent 1%) center / var(--dot-space) var(--dot-space),
-    linear-gradient(var(--c-bg-2) calc(var(--dot-space) - var(--dot-size)), transparent 1%) center / var(--dot-space) var(--dot-space),
+    linear-gradient(90deg, var(--bg-c-2) calc(var(--dot-space) - var(--dot-size)), transparent 1%) center / var(--dot-space) var(--dot-space),
+    linear-gradient(var(--bg-c-2) calc(var(--dot-space) - var(--dot-size)), transparent 1%) center / var(--dot-space) var(--dot-space),
     var(--dot-c-2);
 }
 
@@ -165,7 +169,7 @@ footer {
     width: 100%;
 
     & h1,h2,h3,b1 {
-        background-color: var(--c-bg-2);
+        background-color: var(--bg-c-2);
     }
 }
 

@@ -11,17 +11,21 @@
 
 /* ABOUT */
 .about-grid-1 {
-    background-color: rgb(255, 249, 241);
+    background-color: var(--bg-c-1);
 
     & h1,h2,h3,b1,b2,b3 {
         background-color: transparent;
     }
 }
 
+.about-title {
+    padding-bottom: var(--pad);
+}
+
 /* -- */
 
 .about-item-1 {
-    width: clamp(150px, 50vw, 450px);
+    width: clamp(150px, 50vw, 750px);
     left: -10vw;
 }
 
